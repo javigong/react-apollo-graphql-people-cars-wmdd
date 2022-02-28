@@ -2,7 +2,7 @@ import { useQuery } from "@apollo/client";
 import { useParams } from "react-router-dom";
 import { GET_PERSON_WITH_CARS } from "../../queries";
 import Title from "../layout/Title";
-import ShowPerson from "../lists/ShowPerson";
+import ShowPersonAndCars from "../lists/ShowPersonAndCars";
 
 const ShowPage = () => {
   let { id } = useParams();
@@ -18,7 +18,7 @@ const ShowPage = () => {
   return (
     <div className="App">
       <Title text="People & Cars 🚗" />
-      <ShowPerson data={data} />
+      <ShowPersonAndCars data={data} />
     </div>
   );
 };

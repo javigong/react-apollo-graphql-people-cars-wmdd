@@ -10,7 +10,7 @@ const getStyles = () => ({
   },
 });
 
-const ShowPerson = ({ data }) => {
+const ShowPersonAndCars = ({ data }) => {
   const styles = getStyles();
 
   return (
@@ -26,4 +26,4 @@ const ShowPerson = ({ data }) => {
   );
 };
 
-export default ShowPerson;
+export default ShowPersonAndCars;
